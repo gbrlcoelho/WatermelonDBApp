@@ -4,10 +4,10 @@ module.exports = {
   semi: false,
   singleQuote: true,
   jsxSingleQuote: true,
-  printWidth: 200,
+  printWidth: 150,
   useTabs: false,
   arrowParens: 'always',
   endOfLine: 'auto',
   bracketSameLine: true,
   bracketSpacing: false,
-};
+}
