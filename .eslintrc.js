@@ -15,7 +15,7 @@ module.exports = {
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-explicit-any': ['warn'],
         quotes: [2, 'single'],
-        semi: [2, 'never'],
+        semi: ['never', 2],
         'comma-dangle': [2, 'only-multiline'],
         'no-trailing-spaces': [2],
         'jsx-quotes': ['error', 'prefer-single'],
@@ -26,4 +26,4 @@ module.exports = {
       },
     },
   ],
-};
+}
