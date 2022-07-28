@@ -1,10 +1,10 @@
 import Model from '@nozbe/watermelondb/Model'
 
-export interface ICategory extends Model {
+export interface Itask extends Model {
   id: string
   name?: string
 }
 
-export interface ICategories {
-  categories: ICategory[]
+export interface Itasks {
+  categories: Itask[]
 }

@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {Text} from 'react-native'
 import {database} from '../../services/watermelon'
-import {ICategory} from '../../types/model'
+import {Itask} from '../../types/model'
 import {AddTaskButton, ContainerAddTask, CustomInput} from './styles'
 
 export const AddTask = () => {
@@ -9,7 +9,7 @@ export const AddTask = () => {
 
   const handleAddTask = async () => {
     await database.write(async () => {
-      await database.get('categories').create((category: ICategory) => {
+      await database.get('categories').create((category: Itask) => {
         category.name = taskName
       })
     })

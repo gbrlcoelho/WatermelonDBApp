@@ -1,17 +1,17 @@
 import React from 'react'
 import {database} from '../../services/watermelon'
 import withObservables from '@nozbe/with-observables'
-import {CategoryList} from '../../components/CategoryList/CategoryList'
+import {TaskList} from '../../components/TaskList/TaskList'
 
 const db = database.collections.get('categories')
-const observerCategories = () => db.query().observe()
+const observerTasks = () => db.query().observe()
 
-const enhanceWithCategories = withObservables([], () => ({
-  categories: observerCategories(),
+const enhanceWithtasks = withObservables([], () => ({
+  categories: observerTasks(),
 }))
 
-const CategoryListRender = enhanceWithCategories(CategoryList)
+const TaskListRender = enhanceWithtasks(TaskList)
 
 export const Home = () => {
-  return <CategoryListRender />
+  return <TaskListRender />
 }
